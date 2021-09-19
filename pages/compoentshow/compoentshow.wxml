@@ -1,0 +1,22 @@
+<!--pages/compoentShow/compoentShow.wxml-->
+<!-- <segmentBar
+    titleList="{{arr}}"
+    pageList="{{pageList}}"
+    bind:clickBarItem="getClickBarItem"></segmentBar> -->
+<segmentPane
+    titleList="{{arr}}"
+    pageList="{{pageList}}"
+    pane_item="font">
+    <view slot="1">
+        12121
+    </view>
+    <view slot="2">
+        454554
+    </view>
+    <view slot="3">
+        65656566
+    </view>
+    <view slot="4">
+        565656
+    </view>
+    </segmentPane>

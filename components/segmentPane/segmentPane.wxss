@@ -1,0 +1,10 @@
+/* components/segmentPane/segmentPane.wxss */
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.swiper {
+    flex: 1;
+    background: rosybrown;
+}

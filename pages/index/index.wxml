@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container" bindtap="clickItem">
+ <block wx:for="{{list}}" wx:key="id">
+    <view class="item {{item.isDel ? 'delItem' : ''}}" bindlongpress="delItem" id="{{item.id}}">
+    {{item.name}}
+    <view>{{ index.calc(item.num) }}</view>
+    <view wx:if="{{item.isDel}}" class="btn" data-id="{{item.id}}" bindtap="delCard">X</view>
+    </view>
+ </block>
+</view>
+<!-- <import src="../../templates/card/card"></import>
+<template is="card" data="{{title: '测试', desc: '121211212'}}"></template>
+<template is="card" data="{{title: '练习', desc: '454544545'}}"></template> -->
+
+
+<wxs module="ceshi">
+  // function test (num) {
+  //   return ++num  + '个'
+  // }
+  // module.exports = {
+  //   test: test
+  // }
+</wxs>
+
+<wxs src="../index/index.wxs" module="index"></wxs>

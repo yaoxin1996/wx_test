@@ -1,0 +1,16 @@
+<!--components/segmentPane/segmentPane.wxml-->
+<view class="container">
+    <segmentBar
+        id="s_bar"
+        titleList="{{titleList}}"
+        bind:clickBarItem="getClickBarItem"
+        ></segmentBar>
+    <swiper bindchange="changeItem" circular="true" class="swiper" current="{{ id == '' ? 0 : (id - 1) }}">
+        <block wx:for="{{titleList}}" wx:key="id">
+            <swiper-item class="pane_item">
+                <slot name="{{item.id}}"></slot>
+            </swiper-item>
+        </block>
+    </swiper>
+
+</view>

@@ -1,0 +1,32 @@
+<view class="container">
+    <image class="header" src="/asset/images/2.jpg"></image>
+    <view class="login">
+        <form bindsubmit="handleSubmit">
+            <view>
+                <text class="iconfont icon-zhanghao"></text>
+                <input class="account" bindinput="inputUser" name="user" placeholder="请输入账号"></input>
+                <text class="iconfont icon-chenggong" wx:if="{{isShow}}"></text>
+                <text class="iconfont icon-info" wx:else></text>
+            </view>
+            <view>
+                <text class="iconfont icon-password"></text>
+                <input class="password" name="pwd" bindinput="inputPwd" password placeholder="请输入密码"></input>
+                <!-- <text class="iconfont icon-info"></text> -->
+            </view>
+            <view class="space_between">
+                <checkbox-group name="remeber" bindchange="changeRember">
+                    <checkbox color="tomato" value="1" checked="{{checkPwd}}">记住密码</checkbox>
+                </checkbox-group>
+                <checkbox-group name="auto" bindchange="changeAuto">
+                    <checkbox color="tomato" value="1" checked="{{checkAuto}}">自动登录</checkbox>
+                </checkbox-group>
+            </view>
+            <view>
+                <button type="primary" class="loginBtn" form-type="submit" disabled="{{isTrue}}">登录</button>
+            </view>
+            <view>
+                <button class="registerBtn">注册</button>
+            </view>
+        </form>
+    </view>
+</view>

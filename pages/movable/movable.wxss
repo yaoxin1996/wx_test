@@ -1,0 +1,40 @@
+/* pages/movable/movable.wxss */
+
+.cell {
+    background-color: grey;
+    height: 100rpx;
+    display: flex;
+}
+.del {
+    width: 160rpx;
+    height: 100rpx;
+    background: lightcoral;
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+}
+
+.area {
+    /* width: 215rpx; */
+    height: 100%;
+    flex: 1;
+    background: lightgray;
+}
+.movable {
+    width: 100vw;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: tomato;
+    background-color: lightcyan;
+}
+.move {
+    width: 100%;
+    background-color: thistle;
+}
+.item {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background: tomato;
+}

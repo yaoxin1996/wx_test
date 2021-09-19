@@ -1,0 +1,19 @@
+<!--pages/movable/movable.wxml-->
+<view class="cell">
+    <movable-area class="area" >
+        <movable-view
+            class="movable"
+            x="{{isMove ? -100 : 0}}"
+            direction="horizontal"
+            bindtouchstart="cellStart"
+            bindtouchend="cellEnd">
+                左滑删除
+            </movable-view>
+            <!-- x="{{cellX}}" -->
+    </movable-area>
+    <view class="del">删除</view>
+</view>
+<movable-area class="move" style="height: {{height}}rpx;">
+    <view class="btn" bindtap="click">点击</view>
+     <movable-view class="item" direction="all" x="360" y="50"></movable-view>
+</movable-area>

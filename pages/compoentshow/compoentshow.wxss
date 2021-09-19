@@ -1,0 +1,5 @@
+/* pages/compoentShow/compoentShow.wxss */
+.font {
+    color: #fff;
+    text-align: center;
+}

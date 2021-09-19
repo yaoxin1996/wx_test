@@ -1,0 +1,47 @@
+/**index.wxss**/
+@import '../../templates/card/card.wxss';
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+  flex-wrap: wrap;
+}
+.item {
+  width: 200rpx;
+  height: 300rpx;
+  border: 1rpx solid #f2f2f2;
+  border-radius: 30rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: -25rpx;
+  right: -5rpx;
+}
+.delItem {
+  animation: dou 1s 0s infinite;
+}
+@keyframes dou {
+  0% {
+    transform: rotate(0deg);
+  }
+  10%, 20%, 30% {
+    transform: rotate(-4deg);
+  }
+  15%, 25%, 35% {
+    transform: rotate(4deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  45% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

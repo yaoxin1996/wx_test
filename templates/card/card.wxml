@@ -1,0 +1,6 @@
+<template name="card">
+    <view class="card">
+        <view class="title">{{title}}</view>
+        <view class="content">{{desc}}</view>
+    </view>
+</template>

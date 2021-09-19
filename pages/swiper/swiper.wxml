@@ -1,0 +1,6 @@
+<!--pages/swiper/swiper.wxml-->
+<swiper indicator-dots="true" indicator-color="#fff" indicator-active-color="tomato" autoplay="true" circular="true" interval="2000">
+    <swiper-item wx:for="{{imgList}}" wx:key="id" item-id="{{item.id}}" bindtap="clickImg" data-id="{{item.id}}">
+        <image src="{{item.url}}"></image>
+    </swiper-item>
+</swiper>

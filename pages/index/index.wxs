@@ -1,0 +1,19 @@
+
+function test (num) {
+    var num = num
+    return ++num  + '个'
+  }
+  function calc (num) {
+      console.log(num);
+     var end
+    if (num >= 1000) {
+        end = num / 1000 + 'k'
+    } else {
+        end = num
+    }
+      return end
+  }
+  module.exports = {
+    test: test,
+    calc: calc
+  }

@@ -1,0 +1,10 @@
+<!--components/segmentBar/segmentBar.wxml-->
+<view class="bar">
+    <block wx:for="{{ titleList }}" wx:key="id">
+        <view bindtap="clickItem" data-id="{{ item.id }}" class="item {{ (selectId == '' ? titleList[0].id : selectId) == item.id ? 'active' : '' }}" >
+            <view class="title">{{ item.title }}</view>
+            <view class="subtitle">{{ item.subTitle }}</view>
+        </view>
+    </block>
+    <!-- <view>{{selectId}}</view> -->
+</view>
