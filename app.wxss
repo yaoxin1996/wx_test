@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2345401 */
+  src: url('//at.alicdn.com/t/font_2345401_3cwtokr29h.woff2?t=1632018390462') format('woff2'),
+       url('//at.alicdn.com/t/font_2345401_3cwtokr29h.woff?t=1632018390462') format('woff'),
+       url('//at.alicdn.com/t/font_2345401_3cwtokr29h.ttf?t=1632018390462') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chenggong:before {
+  content: "\e615";
+  color: green;
+}
+
+.icon-info:before {
+  content: "\ebcf";
+  color: tomato;
+}
+
+.icon-password:before {
+  content: "\e608";
+}
+
+.icon-zhanghao:before {
+  content: "\e607";
+}
